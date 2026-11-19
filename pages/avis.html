@@ -571,6 +571,93 @@
           </div>
         </div>
       </section>
+      
+      <!--ANDRES : ajout de formulaire-->
+      <section>
+        <div class="col-md-12 my-5">
+          <div class="row justify-content-center">
+            <div class="col-lg-9">
+              <form
+                method="post"
+                action="contact.php"
+                style="max-width: 500px"
+                class="mx-auto"
+              >
+                <h2 class="mb-3">Laissez-nous votre avis</h2>
+                <div class="row g-3">
+                  <div class="col-md-12">
+                    <label for="your-name" class="form-label">Nom</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="your-name"
+                      name="your-name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-12">
+                    <label for="your-surname" class="form-label">Prénom</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="your-surname"
+                      name="your-surname"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-12">
+                    <label for="your-email" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="your-email"
+                      name="your-email"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-12">
+                    <label for="your-subject" class="form-label"
+                      >Votre photo</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="your-subject"
+                      name="your-subject"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label for="your-message" class="form-label"
+                      >Votre avis</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="your-message"
+                      name="your-message"
+                      rows="5"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="col-12">
+                    <div class="row justify-content-md-end">
+                      <div class="col-md-12">
+                        <button
+                          data-res="<?php echo $sum; ?>"
+                          type="submit"
+                          class="btn btn-dark w-100 fw-bold"
+                        >
+                          Envoyer
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- formulaire d'avis -->
     </main>
     <!-- section : footer -->
